@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/colorBackground" xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:text="Teks Enkripsi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView4" />
+
+            <EditText
+                android:padding="10dp"
+                android:background="@color/colorFormInput"
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/editTextEncrypt"
+                android:layout_marginBottom="10dp"
+                android:gravity="left" />
+
+            <TextView
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:text="Kunci Dekripsi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView5" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp">
+
+                <EditText
+                    android:padding="10dp"
+                    android:background="@color/colorFormInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:id="@+id/editTextKunci"
+                    android:layout_weight="1"
+                    android:gravity="left" />
+
+                <Button
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/button_primary"
+                    android:text="Button"
+                    android:layout_width="250dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/btnDecrypt"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp" />
+            </LinearLayout>
+
+            <TextView
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:text="Hasil Dekripsi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView6" />
+
+            <EditText
+                android:padding="10dp"
+                android:background="@color/colorFormInput"
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:id="@+id/editTextDecrypt"
+                android:gravity="left" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
